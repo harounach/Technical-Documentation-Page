@@ -1,0 +1,98 @@
+/* Mobile */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.drawer {
+  width: 100%;
+}
+
+#navbar {
+
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list__item {
+  width: 100%;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px 16px;
+  margin: 8px 24px;
+  color: blue;
+  text-decoration: none;
+  background-color: rgba(245, 243, 243, 0.952);
+  border-radius: 4px;
+}
+
+#main-doc {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.main_section {
+
+}
+
+header > h1 {
+  font-size: 1.5rem;
+}
+
+header > h2 {
+    font-size: 1.2rem;
+  }
+
+code {
+    white-space: pre;
+    width: 100%;
+    background-color: #f5f2f0;
+}
+
+/* Laptop & Desktop */
+@media screen and (min-width: 650px) {
+  .page {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .drawer {
+    width: 30%;
+  }
+
+  #main-doc {
+    width: 65%;
+  }
+}
+
+
